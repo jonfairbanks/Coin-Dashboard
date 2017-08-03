@@ -3,7 +3,8 @@
     <head>
         <title>Coin Dashboard</title>
         <link rel='shortcut icon' type='image/x-icon' href='https://www.freefavicon.com/freefavicons/business/gold-dollar-coin-152-190431.png' />
-        <meta http-equiv="refresh" content="30"> <!-- Reload every X seconds -->
+        <meta http-equiv="refresh" content="60"> <!-- Reload every X seconds -->
+        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
     </head>
     <style>
         #container {
@@ -34,6 +35,18 @@
             padding: 10px;
         }
 
+        #xrp {
+            float: left;
+            width: 48%;
+            padding: 10px;
+        }
+
+        #bch {
+            float: left;
+            width: 48%;
+            padding: 10px;
+        }
+
         #ticker {
             width: 98%;
             padding: 10px;
@@ -48,24 +61,28 @@
         <div id='container'>
             <!-- Row 1 -->
             <div id='btc'>
-                <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
                 <div class="coinmarketcap-currency-widget" data-currency="bitcoin" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
             </div>
-            <div id='eth'>
-                <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
-                <div class="coinmarketcap-currency-widget" data-currency="ethereum" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
+            <div id='bch'>
+                <div class="coinmarketcap-currency-widget" data-currency="bitcoin-cash" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
             </div>
             <br>
             <!-- Row 2 -->
+            <div id='eth'>
+                <div class="coinmarketcap-currency-widget" data-currency="ethereum" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
+            </div>
             <div id='iota'>
-                <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
                 <div class="coinmarketcap-currency-widget" data-currency="iota" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
             </div>
+            
+            <br>
+            <!-- Row 3 -->
             <div id='xmr'>
-                <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
                 <div class="coinmarketcap-currency-widget" data-currency="monero" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
             </div>
-            <br>
+            <div id='xrp'>
+                <div class="coinmarketcap-currency-widget" data-currency="ripple" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
+            </div>
             <div id='ticker'>
                 <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="39430/"></script>
             </div>
