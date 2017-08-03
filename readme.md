@@ -2,6 +2,12 @@
 
 A barebones cryptocurrency dashboard meant for a spare monitor or TV. 
 
-Currently tracks Bitcoin, Ethereum, IOTA and Monero prices via CoinMarketCap widgets.
+Currently tracks the following coins via CoinMarketCap widgets:
+- Bitcoin (BTC)
+- Bitcoin Cash (BCH) 
+- Ethereum (ETH)
+- IOTA (MIOTA)
+- Monero (XMR)
+- Ripple (XRP)
 
 https://coinmarketcap.com/
